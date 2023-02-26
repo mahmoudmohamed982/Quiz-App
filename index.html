@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="final" style="display: none;">
+        <h3>all questions are answered</h3>
+        <p class="score"></p>
+        <h3>try again</h3>
+        <button id="again">again</button>
+
+    </div>
+
+    <div class="quiz" style="display: none;">
+
+      <div class="count">
+          <p class="current">0</p>
+          <p>/</p>
+          <p class="total"></p>
+      </div>
+
+      <h3 id="questions"></h3>
+      <label for="" id="a1" class="ans-container"></label>
+      <label for="" id="a2" class="ans-container"></label>
+      <label for="" id="a3" class="ans-container"></label>
+      <label for="" id="a4" class="ans-container"></label>
+
+      <button  id="next">submit</button>
+    </div>
+
+
+    <div class="settings">
+        <h2>choose quiz settings</h2>
+
+        <label for="">category</label>
+        <select name="" id="category">
+            <option value="9">gineral</option>
+            <option value="27">animals</option>
+            <option value="23">history</option>
+            <option value=""21>sports</option>
+        </select>
+
+        <div>
+        <label for="difficulty">difficultyq</label>
+
+        <label for="easy">
+            <input type="radio" name="difficulty" id="easy">
+            easy
+        </label>
+
+        <label for="medium">
+            <input type="radio" name="difficulty" id="medium">
+            medium
+        </label>
+
+        <label for="hard">
+            <input type="radio" name="difficulty" id="hard">
+            hard
+        </label>
+
+        </div>
+
+        <div>
+            <label for="numQuestions">Number of Questions</label>
+            <input type="number" id="numQuestions">
+        </div>
+
+        <button id="start" class="submit">start quiz</button>
+    </div>
+  
+    <script  src="main.js" type="module"></script>
+</body>
+</html>
